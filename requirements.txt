@@ -1,4 +1,5 @@
 blessed
+halo
 python-dateutil
 requests
 tqdm
