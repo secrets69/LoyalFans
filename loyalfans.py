@@ -391,18 +391,6 @@ class Model(User):
         timestamp = datetime.datetime.timestamp(iso_datetime)
         return timestamp
 
-    # def get_timestamp(self, date):
-    #     iso_datetime = parse(date)
-    #     timezone = time.strftime('%z', time.gmtime())
-    #     timezone = timezone.replace('+', '')
-    #     if timezone == '0000':
-    #         timezone = 0
-    #     else:
-    #         timezone = timezone.replace('0', '')
-    #     delta = datetime.timedelta(hours=int(timezone))
-    #     timestamp = datetime.datetime.timestamp(iso_datetime + delta)
-    #     return timestamp
-
 
 class Folder(User):
     def __init__(self, slug):
