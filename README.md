@@ -1,3 +1,7 @@
+# ARCHIVED
+
+This repo is no longer being maintained because I don't use the site.
+
 # LoyalFans
 Download photos and videos from your favorite creator on LoyalFans
 
