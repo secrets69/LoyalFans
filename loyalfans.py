@@ -75,7 +75,7 @@ class User:
             self.log.info(self.term.red(f"{r.status_code} STATUS CODE"))
             self.log.info(self.term.red(self.log.STATUS_ERROR))
             sys.exit(0)
-        creators = r.json()['response']['followed']
+        creators = r.json()['followed']
         creators_info_list = [(creator['name'].strip(), creator['slug'])
                               for creator in creators]
         creators_info_list.sort(key=lambda x: x[0].casefold())
